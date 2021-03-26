@@ -3,7 +3,7 @@ import React from 'react'
 const Form = ({setInputText, todos, setTodos, inputText, setStatus}) => {
     //Here before the return you can write JS code and functions
     const inputTextHandler = (e) => {
-       //-----> REACT CHALLENGE: TRACK USER INPUT
+       //TODO TRACK USER INPUT
        //HINT: USE setInputText
     }
     const submitTodoHandler = (e) => {
@@ -18,14 +18,14 @@ const Form = ({setInputText, todos, setTodos, inputText, setStatus}) => {
             //Do not do Math.random() to set an ID for an actual application. This is for speed
             {text: inputText, completed: false, id: Math.random() * 1000}
         ])
-        //-----> REACT CHALLENGE: CLEAR USER INPUT
+        //TODO: CLEAR USER INPUT
         
     }
     const statusHandler = (e) => {
-        //-----> REACT CHALLENGE: TRACK USER INPUT
+        //TODO: TRACK USER INPUT
     }
     
-    //-----> REACT CHALLENGE: GET FORM BUTTON TO WORK
+    //TODO: GET FORM BUTTON TO WORK
     return(
         <form>
             <input value={inputText} onChange={inputTextHandler} type="text" className="todo-input" />
