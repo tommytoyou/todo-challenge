@@ -34,3 +34,9 @@ Give an example.
 
 - This repo contains an almost-working frontend React todo app.
 - In [src/components/Form.js](src/components/Form.js), complete the 4 tasks marked with `//TODO`.
+- To check if you are complete, you can type
+```bash
+npm run test
+```
+- You will see there are 5 tests to pass, 1 will be passing to begin with
+- To exit out of the tests type `q` or control C, all 5 Tests or the 1 Test Suite should be passing.
