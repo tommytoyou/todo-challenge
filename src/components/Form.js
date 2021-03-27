@@ -28,8 +28,8 @@ const Form = ({setInputText, todos, setTodos, inputText, setStatus}) => {
     //-----> REACT CHALLENGE: GET FORM BUTTON TO WORK
     return(
         <form>
-            <input value={inputText} onChange={inputTextHandler} type="text" className="todo-input" />
-            <button className="todo-button" type="submit">
+            <input data-testid='input' value={inputText} onChange={inputTextHandler} type="text" className="todo-input" />
+            <button id='submit-test' className="todo-button" type="submit">
                 <i className="fas fa-plus-square"></i>
             </button>
             <div className="select">
