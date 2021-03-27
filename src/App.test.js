@@ -4,22 +4,15 @@ import userEvent from '@testing-library/user-event'
 import App from './App';
 import Form from './components/Form'
 
-test('we have text input', async ()=> {
+test('we have constrolled text input', async ()=> {
   render(<App  />)
-  // fireEvent.click(screen.getById('submit-test'))
-  // getByTestId looks at data-testid attribute
   let inputField = screen.getByTestId('input')
-  console.log(inputField.value)
-  userEvent.type(inputField, 'hey fix it')
-  console.log(inputField.value)
-
+  userEvent.type(inputField, 'hey fix this')
   expect(screen.getByTestId('input')).toHaveValue('hey fix this')
 })
 
-  
 
-
-test('renders learn react link', () => {
+test('this is still the To-do List', () => {
   render(<App />);
   const linkElement = screen.getByText(/To-do List/i);
   expect(linkElement).toBeInTheDocument();
