@@ -5,6 +5,7 @@ const Form = ({setInputText, todos, setTodos, inputText, setStatus}) => {
     const inputTextHandler = (e) => {
        //TODO TRACK USER INPUT
        //HINT: USE setInputText
+       
     }
     const submitTodoHandler = (e) => {
         e.preventDefault()
@@ -23,14 +24,14 @@ const Form = ({setInputText, todos, setTodos, inputText, setStatus}) => {
     return(
         <form>
             <input data-testid='input' value={inputText} onChange={inputTextHandler} type="text" className="todo-input" />
-            <button id='submit-test' className="todo-button" type="submit">
+            <button data-testid='submit-test' className="todo-button" type="submit" onClick={submitTodoHandler}>
                 <i className="fas fa-plus-square"></i>
             </button>
             <div className="select">
-                <select onChange={statusHandler} name="todos" className="filter-todo">
+                <select data-testid='select' onChange={statusHandler} name="todos" className="filter-todo">
                 <option value="all">All</option>
-                <option value="completed">Completed</option>
-                <option value="uncompleted">Uncompleted</option>
+                <option data-testid='completed' value="completed">Completed</option>
+                <option data-testid='uncompleted' value="uncompleted">Uncompleted</option>
                 </select>
             </div>
         </form>
