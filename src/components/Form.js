@@ -23,7 +23,11 @@ const Form = ({setInputText, todos, setTodos, inputText, setStatus}) => {
     //TODO: GET FORM BUTTON TO WORK
     return(
         <form>
-            <input data-testid='input' value={inputText} onChange={inputTextHandler} type="text" className="todo-input" />
+            <input data-testid='input' 
+            value={inputText} 
+            onChange={inputTextHandler} 
+            type="text" 
+            className="todo-input" />
             <button data-testid='submit-test' className="todo-button" type="submit" onClick={submitTodoHandler}>
                 <i className="fas fa-plus-square"></i>
             </button>
