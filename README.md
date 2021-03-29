@@ -4,7 +4,7 @@
 - Fork and clone this repo.
 - Answer the written questions.
 - Complete the React app.
-- You have 70 minutes.
+- You have until 10:10AM.
 
 ---
 
@@ -16,16 +16,7 @@
 Give examples for each.
 
 ---
-### In MongoDB, what is the difference between Embedded Documents and Document References? 
-Give examples for each.
-
----
 ### What is Lifting State Up in React? 
-Give an example.
-
----
-
-### What is Conditional Rendering? 
 Give an example.
 
 ---
